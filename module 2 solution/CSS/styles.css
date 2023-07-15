@@ -1,0 +1,73 @@
+/* css/style.css */
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    margin-right: 5px;
+    margin-bottom: 5px;
+  }
+  
+  /* Set font-family and font sizes (optional) */
+  body {
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 1.75em;
+    margin-right: 5px;
+  }
+  
+  h2 {
+    font-size: 1.25em;
+    margin-right: 5px;
+  }
+  
+  /* Layout for desktop view (992px and above) */
+  .section {
+    float: left;
+    width: 32.33%;
+    border: 1px solid black;
+    padding: 20px;
+    background-color: #f2f2f2;
+  }
+  
+  /* Layout for tablet view (768px to 991px) */
+  @media (max-width: 991px) {
+    .section {
+      width: 49%;
+    }
+    .section:nth-child(4) {
+        clear: both;
+        width: 99%;
+      }
+  
+   
+  }
+  
+  /* Layout for mobile view (less than or equal to 767px) */
+  @media (max-width: 767px) {
+    .section {
+      width: 100%;
+    }
+    
+  }
+  
+
+  .section h2 {
+    position: relative;
+  }
+  
+  .section h2::after {
+    content: "";
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    background-color: peachpuff; 
+    border: 1px solid black;
+  }
+  
